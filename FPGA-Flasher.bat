@@ -54,13 +54,8 @@ xc3sprog.exe -c ftdi -L -v -p 0 "%bitfile%"
 PAUSE
 goto con
 :prom
-xc3sprog.exe -c ftdi "%cd%\spiflasherLX9.bit"
-xc3sprog.exe -c ftdi -L -v -p 0 -I "%bitfile%"
-PAUSE
-cls
-echo -----------------------------------------------------------
-echo In Prom rom flashed. it's need to press reset on the board.
-echo -----------------------------------------------------------
+xc3sprog.exe -c ftdi -L "%cd%\spiflasherLX9.bit"
+xc3sprog.exe -c ftdi -L -v -R -p 0 -I "%bitfile%"
 PAUSE
 goto con
 :error
