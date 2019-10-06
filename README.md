@@ -8,6 +8,5 @@ Automate flashing XC6SLX9 from *.bit file by drag and drop function
  2. Select your rom type which your want (Normal,Prom)
  3. Enter 
 
-*If you select Prom rom you need to reset your FPGA board*
 
 ![enter image description here](https://raw.githubusercontent.com/thanatath/FPGA-Flasher/master/Screenshot.png)
