@@ -50,12 +50,12 @@ if %input%==1 goto normal
 if %input%==2 goto prom
 goto index
 :normal
-xc3sprog.exe -c ftdi -L -v -p 0 "%bitfile%"
+xc3sprog.exe -c ftdi -L -v -p 0 %bitfile%
 PAUSE
 goto con
 :prom
 xc3sprog.exe -c ftdi -L "%cd%\spiflasherLX9.bit"
-xc3sprog.exe -c ftdi -L -v -R -p 0 -I "%bitfile%"
+xc3sprog.exe -c ftdi -L -v -R -p 0 -I %bitfile%
 PAUSE
 goto con
 :error
